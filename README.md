@@ -5,7 +5,7 @@ LOREM IPSUM
 ## Supports
 
 Retrouvez les slides du cours en [téléchargement](https://nodeandtyped.github.io/NodeAndTyped/labs-vuejs/_supports/slides.pptx).
-Et le site sur [https://nodeandtyped.github.io/labs-vuejs](https://nodeandtyped.github.io/labs-vuejs).
+Et le site sur [https://nodeandtyped.github.io/labs-vuejs](https://nodeandtyped.github.io/labs-vuejs/).
 
 ## Objectifs
 
