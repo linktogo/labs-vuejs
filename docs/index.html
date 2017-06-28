@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Las Vue.js - by Valtech</title>
+  <meta name="description" content="Présentation de Vue.js par Nicolas Martin et Fabien Brunet">
+  <meta name="viewport"
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/docsify@latest/lib/themes/buble.css" title="buble">
+  <style>
+    .app-nav a.logo {
+      float: left;
+      z-index: 1;
+      height: 20px;
+      display: block;
+      margin-top: -10px;
+    }
+
+    .app-nav a.logo img {
+      width: 200px;
+      color: white;
+    }
+
+    section.cover {
+      color: white;
+      background: linear-gradient(to bottom, #399d79 0%, #354e62 50%) !important
+    }
+
+    section.cover blockquote {
+      color: #00bdfa;
+    }
+
+    section.cover h1 .anchor span {
+      color: white
+    }
+
+    section.cover .cover-main > p:last-child a {
+      border-color: white;
+      color: white
+    }
+
+    section.cover .cover-main > p:last-child a:hover {
+      background: white;
+      color: #337ab7;
+    }
+
+    section.cover .cover-main > p:last-child a:last-child {
+      color: #111;
+      border-color: #00bdfa;
+      background-color: #00bdfa;
+    }
+
+    .github-corner svg {
+      color: #fff;
+      fill: #00bdfa;
+      fill: var(--theme-color, #00bdfa);
+      height: 80px;
+      width: 80px;
+    }
+
+    .authors {
+      text-align: center;
+    }
+    .authors-badge {
+      display: inline-block;
+      width: 200px;
+      margin:20px;
+    }
+    .authors-badge img {
+      border-radius: 100%;
+      overflow: hidden;
+      display: block;
+      width:100%;
+      margin-bottom: 20px;
+    }
+  </style>
+</head>
+<body>
+<nav>
+  <a href="/" class="logo"><img src="_media/nodetyped.svg"></a>
+</nav>
+<div id="app">Loading ...</div>
+</body>
+<script>
+  window.$docsify = {
+    name: 'Labs Vue.js',
+    repo: 'http://github.com/NodeAndTyped/labs-vuejs',
+    auto2top: true,
+    coverpage: true,
+    executeScript: true,
+    loadSidebar: true,
+    maxLevel: 4,
+    subMaxLevel: 2,
+    search: {
+      noData: {
+        '/': 'No results!'
+      },
+      paths: 'auto',
+      placeholder: {
+        '/': 'Search'
+      }
+    },
+    formatUpdated: '{MM}/{DD} {HH}:{mm}',
+    plugins: [
+      function (hook, vm) {
+        hook.beforeEach(function (html) {
+          var url = 'http://github.com/NodeAndTyped/labs-vuejs/blob/master/docs/' + vm.route.file
+          var editHtml = '[:memo: Edit Document](' + url + ')\n'
+
+          return editHtml
+            + html
+            + '\n----\n'
+            + 'Last modified {docsify-updated} '
+            + editHtml
+        })
+      }
+    ]
+  }
+</script>
+<script src="//cdn.jsdelivr.net/npm/docsify@latest/lib/docsify.min.js"></script>
+<script src="//cdn.jsdelivr.net/npm/docsify@latest/lib/plugins/search.min.js"></script>
+<script src="//cdn.jsdelivr.net/npm/prismjs/components/prism-bash.min.js"></script>
+<script src="//cdn.jsdelivr.net/npm/prismjs/components/prism-markdown.min.js"></script>
+<script src="//cdn.jsdelivr.net/npm/prismjs/components/prism-typescript.min.js"></script>
+<script src="//cdn.jsdelivr.net/npm/prismjs/components/prism-javascript.min.js"></script>
+</html>
