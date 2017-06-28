@@ -1,24 +1,21 @@
-# Présentation
+# directive
 
-LOREM IPSUM
+> directive
 
-## Supports
+## Build Setup
 
-Retrouvez les slides du cours en [téléchargement](https://nodeandtyped.github.io/NodeAndTyped/labs-vuejs/_supports/slides.pptx).
-Et le site sur [https://nodeandtyped.github.io/labs-vuejs](https://nodeandtyped.github.io/labs-vuejs).
+``` bash
+# install dependencies
+npm install
 
-## Objectifs
+# serve with hot reload at localhost:8080
+npm run dev
 
-Le labs a pour objectif de vous présenter les différentes fonctionnalités de Vue.js. Au programme :
+# build for production with minification
+npm run build
 
-- Mise en place de l'environnement,
-- Développement d'une application,
-- Utilisation des directives,
-- Ulilisation des filtres,
-- Utilisation des composants.
-- Mise en place de TypeScript avec Vue.js.
+# build for production and view the bundle analyzer report
+npm run build --report
+```
 
-## Auteurs
-
-- Fabien Brunet - Développeur FullStack Java
-- Nicolas Martin - Développeur Front-End
+For detailed explanation on how things work, checkout the [guide](http://vuejs-templates.github.io/webpack/) and [docs for vue-loader](http://vuejs.github.io/vue-loader).
